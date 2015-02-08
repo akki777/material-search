@@ -6,7 +6,8 @@
 ```html
 <material-search placeholder="Search for places..." searchIcon="true" rounded="true" raised="true"></material-search>
 ```
-[[ screenshot.png | height = 50px ]]
+
+![Example](screenshot.png)
 
 ## License
 Licensed under the MIT license.

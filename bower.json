@@ -4,7 +4,7 @@
   "authors": [
     "DaveJ <dave@davejeffery.com>"
   ],
-  "description": "Search input field based on the material design spec http://www.google.com/design/spec/components/text-fields.html#text-fields-auto-complete-text-field",
+  "description": "Search input field web component. Built with Polymer, based on the material design spec http://www.google.com/design/spec/components/text-fields.html#text-fields-auto-complete-text-field",
   "main": "material-search.html",
   "keywords": [
     "polymer",

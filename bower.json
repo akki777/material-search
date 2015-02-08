@@ -1,0 +1,29 @@
+{
+  "name": "material-search",
+  "version": "1.0.0",
+  "authors": [
+    "DaveJ <dave@davejeffery.com>"
+  ],
+  "description": "Search input field based on the material design spec http://www.google.com/design/spec/components/text-fields.html#text-fields-auto-complete-text-field",
+  "main": "material-search.html",
+  "keywords": [
+    "polymer",
+    "search",
+    "web-components",
+    "material-design"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "core-icons": "Polymer/core-icons#~0.5.4",
+    "polymer": "Polymer/polymer#~0.5.4",
+    "core-field": "Polymer/core-field#~0.5.0",
+    "paper-shadow": "Polymer/paper-shadow#~0.5.4"
+  }
+}

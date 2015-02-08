@@ -1,0 +1,67 @@
+<!--
+Copyright (c) 2015 Dave Jeffery (@DaveJ).
+Licensed under the MIT licese: http://opensource.org/licenses/MIT
+-->
+
+<link rel="import" href="../polymer/polymer.html">
+<link rel="import" href="../core-icons/core-icons.html">
+<link rel="import" href="../core-field/core-field.html">
+<link rel="import" href="../paper-shadow/paper-shadow.html">
+
+<polymer-element name="material-search" attributes="placeholder searchIcon rounded raised value blur focus keyup value">
+
+  <template>
+
+    <style>
+      :host([rounded]) core-field {
+        border-radius: 3px;
+      }
+      paper-shadow {
+        z-index: 1;
+      }
+      core-field {
+        background: white;
+        border: 1px solid #ddd;
+        margin: 0;
+        height: 40px;
+        position: relative;
+      }
+      input {
+        width: 100%;
+        position: relative;
+        z-index: 2;
+        line-height: 30px;
+      }
+    </style>
+
+    <core-field id="core_field" icon="search" on-click="{{coreClick}}">
+
+      <template if="{{raised}}">
+        <paper-shadow z="1" id="shadow" fit animated></paper-shadow>
+      </template>
+
+      <template if="{{searchIcon}}">
+        <core-icon icon="search"></core-icon>
+      </template>
+
+      <input on-keyup="{{keyup}}" on-focus="{{focus}}" on-blur="{{blur}}" id="inputText" placeholder="{{placeholder}}" type="search" value="{{value}}">
+      
+    </core-field>
+
+  </template>
+
+  <script>
+  Polymer({
+    searchIcon: true,
+    raised: false,
+    ready: function() {
+      if (this.style.width) {
+        this.$.core_field.style.width = this.style.width;
+      }
+    },
+    coreClick: function() {
+      this.$.inputText.focus();
+    }
+  });
+  </script>
+</polymer-element>

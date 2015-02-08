@@ -12,4 +12,4 @@
 ## License
 Licensed under the MIT license.
 
-Copyright (c) 2014 [@DaveJ](http://twitter.com/DaveJ).
+Copyright (c) 2015 [@DaveJ](http://twitter.com/DaveJ).
